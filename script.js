@@ -20,5 +20,4 @@ return str.match(regex);
 function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
     const entryNumber = targetInputContainer.querySelectorAll();
-
     }
