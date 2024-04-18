@@ -18,9 +18,9 @@ return str.match(regex);
 }
 
 function addEntry() {
-    const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
-    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
-    const HTMLString = ` <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>`;
-    input(type="text", id=`${entryDropdown.value}-${entryNumber}-name`, name=`${entryDropdown.value}-${entryNumber}-name`, placeholder="Name", required)
-    
-    }
+const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
+const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length;
+const HTMLString = `
+<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+<input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">`;
+}
