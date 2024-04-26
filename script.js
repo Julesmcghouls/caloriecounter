@@ -32,3 +32,4 @@ const HTMLString = `
 />`;
 targetInputContainer.innerHTML += HTMLString;
 }
+addEntryButton.addEventListener("click", addEntry);
